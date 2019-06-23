@@ -1,4 +1,4 @@
-<h1>{{ hero.name }}</h1>
+<h1 class="animated fadeIn">{{ hero.name }}</h1>
 <hr>
 <div class="row animated fadeIn fast">
   <div class="col-md-4">
@@ -9,12 +9,8 @@
   <div class="col-md-8">
     <h3>{{ hero.name }}</h3>
     <hr>
-    <p>
-      {{ hero.bio }}
-    </p>
-    <div>
-      <img [src]="homeRoute" class="img-thumbnail rounded img-logo" alt="">
-    </div>
+    <p>{{ hero.bio }}</p>
+    <div><img [src]="homeRoute" class="img-thumbnail rounded img-logo" alt=""></div>
   </div>
 
 </div>
