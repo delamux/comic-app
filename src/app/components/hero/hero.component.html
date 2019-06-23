@@ -1,0 +1,20 @@
+<h1>{{ hero.name }}</h1>
+<hr>
+<div class="row animated fadeIn fast">
+  <div class="col-md-4">
+    <img [src]="hero.img" class="img-fluid" alt="">
+    <br><br>
+    <a href="/heroes" class="btn btn-outline-dark btn-block">All heroes</a>
+  </div>
+  <div class="col-md-8">
+    <h3>{{ hero.name }}</h3>
+    <hr>
+    <p>
+      {{ hero.bio }}
+    </p>
+    <div>
+      <img [src]="homeRoute" class="img-thumbnail rounded img-logo" alt="">
+    </div>
+  </div>
+
+</div>

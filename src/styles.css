@@ -29,3 +29,7 @@ body {
 .fadeIn {
   animation-name: fadeIn;
 }
+.img-logo {
+  width: 250px;
+  height: auto;
+}
