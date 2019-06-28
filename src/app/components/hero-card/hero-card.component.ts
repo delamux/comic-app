@@ -10,15 +10,15 @@ import { Hero } from '../../services/heroes.service';
 export class HeroCardComponent implements OnInit {
   @Input() hero: Hero;
   @Input() index: number;
-  constructor(
-    private router: Router
-  ) { }
+
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
   }
 
   viewHero() {
-    this.router.navigate( ['/hero', this.index] );
+    this.router.navigate(['hero', this.index]);
   }
 
 }

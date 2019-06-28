@@ -70,9 +70,11 @@ export class HeroesService {
   findHeroes(toSearch: string) {
     const result: Hero[] = [];
     toSearch = toSearch.toLocaleLowerCase();
-    for (const hero of this.heroes) {
+    for (let i = 0; i < this.heroes.length; i++) {
+      const hero = this.heroes[i];
       const name = hero.name.toLocaleLowerCase();
       if (name.indexOf(toSearch) >= 0) {
+        hero.index = i;
         result.push(hero);
       }
     }
@@ -87,4 +89,5 @@ export interface Hero {
   img: string;
   appear: string;
   home: string;
+  index?: number;
 }
